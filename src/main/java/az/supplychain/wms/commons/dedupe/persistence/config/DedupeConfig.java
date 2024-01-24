@@ -14,7 +14,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
  * The Configuration class for dedupe persistence component
  */
 @Configuration
-@EnableJpaRepositories(basePackages = "com.scoperetail.ez.commons.dedupe.persistence")
-@EntityScan(basePackages = "com.scoperetail.ez.commons.dedupe.persistence")
+@EnableJpaRepositories(basePackages = "az.supplychain.wms.commons.dedupe.persistence")
+@EntityScan(basePackages = "az.supplychain.wms.commons.dedupe.persistence")
 public class DedupeConfig {
 }

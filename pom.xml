@@ -17,8 +17,8 @@
 
     <properties>
         <java.version>17</java.version>
-        <az-bom-external.version>0.0.1-20240116.072550-3</az-bom-external.version>
-        <az-bom-internal.version>0.0.1-20240117.220725-3</az-bom-internal.version>
+        <az-bom-external.version>0.0.1-SNAPSHOT</az-bom-external.version>
+        <az-bom-internal.version>0.0.1-SNAPSHOT</az-bom-internal.version>
     </properties>
 
     <dependencyManagement>
