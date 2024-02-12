@@ -26,11 +26,11 @@ public class DedupeKeyRepositoryCustomImpl implements DedupeKeyRepositoryCustom 
     EntityManager entityManager;
 
     @Value("${CHECK_DUPLICATE:#{null}}")
-    private String CHECK_DUPLICATE;
+    private String duplicateCheck;
 
     @Override
     public Integer checkDuplicate(String logKey) {
-        Query query = entityManager.createNativeQuery(CHECK_DUPLICATE, DedupeKey.class);
+        Query query = entityManager.createNativeQuery(duplicateCheck, DedupeKey.class);
         query.setParameter(1, logKey);
         query.setParameter(2, logKey);
         return query.executeUpdate();
