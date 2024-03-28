@@ -13,13 +13,11 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-/**
- * The JPA repository for Dedupe table
- */
+/** The JPA repository for Dedupe table */
 @Repository
 public interface DedupeKeyRepository extends JpaRepository<DedupeKey, String> {
-    @Transactional
-    Integer deleteBylogKey(String md5Hex);
+  @Transactional
+  Integer deleteBylogKey(String md5Hex);
 
-    Optional<DedupeKey> findByLogKey(String logKey);
+  Optional<DedupeKey> findByLogKey(String logKey);
 }

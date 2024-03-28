@@ -8,11 +8,9 @@ package az.supplychain.wms.commons.dedupe.persistence.repository.custom;
 
 import org.springframework.stereotype.Repository;
 
-/**
- * For customised implementation of the check duplicate method
- */
+/** For customised implementation of the check duplicate method */
 @Repository
 public interface DedupeKeyRepositoryCustom {
 
-    Integer checkDuplicate(String logKey);
+  Integer checkDuplicate(String logKey);
 }
