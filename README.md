@@ -1,4 +1,3 @@
-
 # WMS commons dedupe persistence
 
 The commons dedupe persistence module provides a Dedupe entity and a repository for the same that can be used to check for duplicates. 
@@ -148,3 +147,4 @@ mvn clean install
 [ ] Need to R&D on UPSERT feature on google spanner. [WMSREBLD-2121](https://track.autozone.com/browse/WMSREBLD-2121)
 
 [ ] Update the check duplicate method in dedupe persistence and use that in message consumer.[WMSREBLD-2122](https://track.autozone.com/browse/WMSREBLD-2122)
+
